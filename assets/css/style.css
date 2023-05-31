@@ -1,0 +1,54 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("https://images.unsplash.com/photo-1541167760496-1628856ab772?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y29mZmVlfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar{
+    margin-left: 2%;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.navbar .logo{
+    align-items: center;
+    color: white;
+}
+.navbar .links{
+    margin-left: 1%;
+}
+.navbar .links a{
+    margin-left: 10px;
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+.navbar .links a::after{
+    content: "";
+    position: absolute;
+    background-color: #30A2FF;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -8px;
+    transition: 0.3s;
+}
+.navbar .links a:hover::after{
+    width: 100%;
+}
+.navbar .barista-btn{
+    position: absolute;
+    margin-left: 80%;
+    text-decoration: none;
+}
+.navbar .barista-btn a button{
+    background-color: white;
+    border: none;
+    padding: 10px 20px;
+    color: black;
+    transition: 0.3s;
+}
+.navbar .barista-btn a button:hover{
+    background-color: black;
+    color: white;
+}
